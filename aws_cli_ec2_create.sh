@@ -1,4 +1,6 @@
 #!/bin/bash
+# Using bash script, integrate it with aws cli and create a ec2 instance on it
+
 set -euo pipefail
 
 check_awscli() {
