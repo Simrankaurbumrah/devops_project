@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Deploy a Django app and handle errors
+# Deploy a Django app and handle errors using a bash script
 
 # Function to clone the Django app code
 code_clone() {
