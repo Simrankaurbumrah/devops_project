@@ -72,8 +72,9 @@ create_ec2_instance() {
 }
 
 main() {
-    check_awscli || install_awscli
-
+    if ! check_awscli; then 
+    install_awscli || exit 1
+    fi
     echo "Creating EC2 instance..."
 
     # Specify the parameters for creating the EC2 instance
