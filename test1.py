@@ -7,3 +7,7 @@ if a>b:
     print("a is grater than b")
 else:
     print("not gretaer than b")
+
+#these are some new changes
+
+print("hello simran")
