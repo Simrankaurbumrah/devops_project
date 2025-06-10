@@ -52,7 +52,8 @@ resource aws_instance my_instance {
     subnet_id = "subnet-002b7a2e99cf5e81f"
 
     root_block_device {
-      volume_size = var.aws_root_size
+      volume_size = var.enviornment == "dev" ? 20 : var.aws_default_root_size
+
 
       volume_type = "gp3"
     }
