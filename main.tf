@@ -57,7 +57,7 @@ resource aws_instance my_instance {
       volume_type = "gp3"
     }
     tags = {
-      name = each.key
+      Name = each.key
     }
 
 }
