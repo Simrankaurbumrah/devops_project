@@ -5,6 +5,6 @@ class NodeBuilder implements Builder {
         steps.echo "Installing Node.js dependencies..."
         steps.sh "npm install"
         steps.echo "Running Node.js build..."
-        //steps.sh "npm run build"
+        steps.sh "npm run build"
     }
 }
